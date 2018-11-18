@@ -1,0 +1,8 @@
+# vim: ts=2 sw=2 et
+version: '3'
+
+services:
+  cryplyd:
+    build: .
+    volumes:
+      - ~/.cryply:/home/cryply/.cryply

@@ -11,6 +11,6 @@ WORKDIR /home/cryply
 COPY . .
 
 RUN sed -i -e 's/<USERNAME>/YOUR-USERNAME/' config.json
-RUN sed -i -e 's/<PASSWORD>/YOUT-PASSWORD/' config.json
+RUN sed -i -e 's/<PASSWORD>/YOUR-PASSWORD/' config.json
 
 CMD ./miner-sse4 -c config.json 2>&1
